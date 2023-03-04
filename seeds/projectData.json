@@ -1,1 +1,50 @@
-// 
+[
+    {
+        "name": "ABC",
+        "description": "Architectural",
+        "ranking": 5,
+        "needed_funding": 5000
+    },
+    {
+        "name": "DEF",
+        "description": "Architectural",
+        "ranking": 10,
+        "needed_funding": 10000
+    },
+    {
+        "name": "GHI",
+        "description": "Architectural",
+        "ranking": 25,
+        "needed_funding": 800
+    },
+    {
+        "name": "JKL",
+        "description": "Architectural",
+        "ranking": 45,
+        "needed_funding": 800
+    },
+    {
+        "name": "LMN",
+        "description": "Architectural",
+        "ranking": 55,
+        "needed_funding": 800
+    },
+    {
+        "name": "OPQ",
+        "description": "Architectural",
+        "ranking": 65,
+        "needed_funding": 800
+    },
+    {
+        "name": "RST",
+        "description": "Architectural",
+        "ranking": 85,
+        "needed_funding": 800
+    },
+    {
+        "name": "WXY",
+        "description": "Architectural",
+        "ranking": 95,
+        "needed_funding": 800
+    },
+]

@@ -1,1 +1,17 @@
-// 
+[
+    {
+        "name": "one",
+        "email": "one@brokendoor.app",
+        "password": "password12345"
+    },
+    {
+        "name": "two",
+        "email": "two@brokendoor.app",
+        "password": "password12345"
+    },
+    {
+        "name": "three",
+        "email": "three@brokendoor.app",
+        "password": "password12345"
+    }
+]

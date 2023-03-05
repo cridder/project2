@@ -1,50 +1,17 @@
 [
     {
-        "name": "ABC",
-        "description": "Architectural",
-        "ranking": 5,
+        "name": "Music Near Me",
+        "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
         "needed_funding": 5000
     },
     {
-        "name": "DEF",
-        "description": "Architectural",
-        "ranking": 10,
+        "name": "The Ultimate Tech Quiz",
+        "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
         "needed_funding": 10000
     },
     {
-        "name": "GHI",
-        "description": "Architectural",
-        "ranking": 25,
+        "name": "Roll 'Em Up",
+        "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
         "needed_funding": 800
-    },
-    {
-        "name": "JKL",
-        "description": "Architectural",
-        "ranking": 45,
-        "needed_funding": 800
-    },
-    {
-        "name": "LMN",
-        "description": "Architectural",
-        "ranking": 55,
-        "needed_funding": 800
-    },
-    {
-        "name": "OPQ",
-        "description": "Architectural",
-        "ranking": 65,
-        "needed_funding": 800
-    },
-    {
-        "name": "RST",
-        "description": "Architectural",
-        "ranking": 85,
-        "needed_funding": 800
-    },
-    {
-        "name": "WXY",
-        "description": "Architectural",
-        "ranking": 95,
-        "needed_funding": 800
-    },
+    }
 ]

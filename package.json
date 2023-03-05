@@ -4,6 +4,7 @@
   "description": "my project 2",
   "main": "server.js",
   "scripts": {
+    "dev": "nodemon ./server.js localhost 3001",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seed.js"
@@ -28,5 +29,8 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.1.2",
     "sequelize": "^6.29.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
   }
 }

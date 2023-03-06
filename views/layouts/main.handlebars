@@ -2,30 +2,52 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Broken Door</title>
-  {{!-- <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css"> --}}
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
-<body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <a href="/">Broken Door</a>
-      </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
+<body class="bg-light text-body">
+
+  {{!-- jumbotron --}}
+  <div class="jumbotron text-center">
+    <h1>Broken Door</h1>
+    <p>Broken Door ranks Employers!</p>
+  </div>
+  {{!-- jumbotron --}}
+
+  <div>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            {{!-- if logged in --}}
+            {{#if logged_in}}
+            <li class="nav-item">
+              <a class="nav-link active" href="/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              {{!-- <button type="button" class="btn btn-link" id="logout">LogOut</button> --}}
+              <a class="nav-link active" id="logout">LogOut</a>
+            </li>
+            {{!-- if NOT logged in --}}
+            {{else}}
+            <li class="nav-item">
+              <a class="nav-link active" href="/login">Login</a>
+            </li>
+            {{/if}}
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container container-fluid mt-5">

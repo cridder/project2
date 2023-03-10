@@ -4,7 +4,7 @@
   "description": "my project 2",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon ./server.js localhost 3001",
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seed.js"

@@ -1,7 +1,7 @@
 {
-  "name": "project2",
+  "name": "employee2",
   "version": "1.0.0",
-  "description": "my project 2",
+  "description": "my employee 2",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",

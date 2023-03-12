@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ABC",
+    "description": "A three letter architectural firm.",
+    "ranking": 56
+  },
+  {
+    "name": "DEF",
+    "description": "Another three letter architectural firm.",
+    "ranking": 67
+  },
+  {
+    "name": "GHI",
+    "description": "A three letter MEP firm.",
+    "ranking": 78
+  },
+  {
+    "name": "JKL",
+    "description": "Another three letter MEP firm.",
+    "ranking": 89
+  }
+]

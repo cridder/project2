@@ -85,15 +85,15 @@
     }
   </script> --}}
 
-        <script>
-          var slider = document.getElementById("project-funding");
-          var output = document.getElementById("int");
-          output.innerHTML = slider.value;
+  <script>
+    var slider = document.getElementById("employee-ranking");
+    var output = document.getElementById("int");
+    output.innerHTML = slider.value;
 
-          slider.oninput = function () {
-            output.innerHTML = this.value;
-          }
-        </script>
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    }
+  </script>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}

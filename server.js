@@ -4,12 +4,12 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
-const dbInit = require("./config/dbInit");
+// const dbInit = require("./config/dbInit");
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 // initialize the database if it doesn't exist
-dbInit();
+// dbInit();
 const app = express();
 //setup port for local or heroku operation
 const PORT = process.env.PORT || 3001;
@@ -29,21 +29,6 @@ const sess = {
 	}),
 };
 
-// const sess = {
-// 	// secret: "Super secret secret",
-// 	secret: process.env."9DV2hEVZwg4Xqezgxh84HdfRGX6yRDfeWurBaWLprVABtq9Kp",
-// 	cookie: {
-// 		maxAge: 86400000,
-// 		httpOnly: true,
-// 		secure: false,
-// 		sameSite: "strict",
-// 	},
-// 	resave: false,
-// 	saveUninitialized: true,
-// 	store: new SequelizeStore({
-// 		db: sequelize,
-// 	}),
-// };
 
 app.use(session(sess));
 

@@ -4,57 +4,54 @@
   </div>
 </div>
 
-{{!-- <div class="row mt-4"> --}}
-  <div class="col-md-6">
-    <h4>Create a New Employer:</h4>
-    <form class="form new-employee-form">
+<div class="col-md-6">
+  <h4>Create a New Employer:</h4>
+  <form class="form new-employee-form">
 
-      <div class="mb-3 mt-3">
-        <label for="employee-name" class="form-label">Employer Name:</label>
-        <input type="text" class="form-control form-input" id="employee-name" placeholder="Enter Employer Name"
-          name="employee-name">
-      </div>
-      <br>
-
-      <div class="form-group">
-        <label for="employee-ranking" class="form-label">Employer Ranking (0 = Really Bad, 100 = Really Good):</label>
-        <input class="form-input" type="number" min="0" max="100" id="employee-ranking" name="employee-ranking" />
-      </div>
-      <br>
-
-      <div class="form-group">
-        <label for="employee-desc" class="form-label">Employer Description:</label>
-        <textarea class="form-input" id="employee-desc" name="employee-desc"></textarea>
-      </div>
-
-
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-
-    </form>
-  </div>
-
-  <br><br>
-
-  {{#if employees.length}}
-  <div class="col-md-6 employee-list">
-    <h4>{{name}}'s</h4>
-    <h4>Current Employers:</h4>
-
-    {{#each employees as |employee|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/employee/{{employee.id}}">{{employee.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{employee.id}}">DELETE</button>
-      </div>
+    <div class="mb-3 mt-3">
+      <label for="employee-name" class="form-label">Employer Name:</label>
+      <input type="text" class="form-control form-input" id="employee-name" placeholder="Enter Employer Name"
+        name="employee-name">
     </div>
-    {{/each}}
+    <br>
+
+    <div class="form-group">
+      <label for="employee-ranking" class="form-label">Employer Ranking (0 = Really Bad, 100 = Really Good):</label>
+      <input class="form-input" type="number" min="0" max="100" id="employee-ranking" name="employee-ranking" />
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="employee-desc" class="form-label">Employer Description:</label>
+      <textarea class="form-input" id="employee-desc" name="employee-desc"></textarea>
+    </div>
+
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+
+  </form>
+</div>
+
+<br><br>
+
+{{#if employees.length}}
+<div class="col-md-6 employee-list">
+  <h4>{{name}}'s</h4>
+  <h4>Current Employers:</h4>
+
+  {{#each employees as |employee|}}
+  <div class="row mb-2">
+    <div class="col-md-8">
+      <h4><a href="/employee/{{employee.id}}">{{employee.name}}</a></h4>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-sm btn-danger" data-id="{{employee.id}}">DELETE</button>
+    </div>
   </div>
-  {{/if}}
-  {{!--
-</div> --}}
+  {{/each}}
+</div>
+{{/if}}
 
 <script src="./js/profile.js"></script>

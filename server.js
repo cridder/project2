@@ -43,6 +43,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
+//sync orm to the datasource
 sequelize.sync({ force: false }).then(() => {
 	app.listen(process.env.PORT, () => console.log("Now listening"));
 });

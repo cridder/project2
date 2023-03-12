@@ -5,17 +5,12 @@
     <h2>
       <a href="/employee/{{employee.id}}">{{employee.name}}</a>
     </h2>
-    {{!-- <p>
-      <span class="dollar-amount">${{format_amount employee.emp_rank}}</span>
-      needed!
-    </p> --}}
     <p>
       <span class="dollar-amount">Employee Ranking: {{emp_rank}} / 100</span>
     </p>
     <p>
       {{employee.description}}
     </p>
-    {{!-- <p>Created by {{employee.user.name}} on {{format_date employee.date_created}}</p> --}}
     <p>Ranked on {{format_date employee.date_created}}</p>
   </div>
 

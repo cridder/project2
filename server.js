@@ -1,22 +1,20 @@
-const path = require("path");
+//require express for running as service
 const express = require("express");
 const session = require("express-session");
-const exphbs = require("express-handlebars");
+//offload routes to controllers directory reference
 const routes = require("./controllers");
+//include handlebars for templating
+const exphbs = require("express-handlebars");
 const helpers = require("./utils/helpers");
-// const dbInit = require("./config/dbInit");
-
+//specify db connection for orm
 const sequelize = require("./config/connection");
+//init session state
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
-// initialize the database if it doesn't exist
-// dbInit();
+const path = require("path");
+
 const app = express();
 //setup port for local or heroku operation
 const PORT = process.env.PORT || 3001;
-
-// Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ helpers });
-
 
 //setup session object
 const sess = {
@@ -29,12 +27,16 @@ const sess = {
 	}),
 };
 
+//point express to the session object
 app.use(session(sess));
 
+// Set up Handlebars.js engine with custom helpers
+const hbs = exphbs.create({ helpers });
 // Inform Express.js on which template engine to use
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
+//enable POST handling in express
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));

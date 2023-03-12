@@ -17,21 +17,33 @@ const PORT = process.env.PORT || 3001;
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
+
+//setup session object
 const sess = {
-	// secret: "Super secret secret",
-	secret: process.env."9DV2hEVZwg4Xqezgxh84HdfRGX6yRDfeWurBaWLprVABtq9Kp",
-	cookie: {
-		maxAge: 86400000,
-		httpOnly: true,
-		secure: false,
-		sameSite: "strict",
-	},
+	secret: "14-mvc-secret",
+	cookie: { maxAge: 3600000 },
 	resave: false,
 	saveUninitialized: true,
 	store: new SequelizeStore({
 		db: sequelize,
 	}),
 };
+
+// const sess = {
+// 	// secret: "Super secret secret",
+// 	secret: process.env."9DV2hEVZwg4Xqezgxh84HdfRGX6yRDfeWurBaWLprVABtq9Kp",
+// 	cookie: {
+// 		maxAge: 86400000,
+// 		httpOnly: true,
+// 		secure: false,
+// 		sameSite: "strict",
+// 	},
+// 	resave: false,
+// 	saveUninitialized: true,
+// 	store: new SequelizeStore({
+// 		db: sequelize,
+// 	}),
+// };
 
 app.use(session(sess));
 

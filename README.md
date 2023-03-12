@@ -6,11 +6,11 @@ Heroku page: https://mysterious-journey-45478.herokuapp.com/
 
 repo: https://github.com/cridder/project2 
 
-![img](../project2/public/Screenshot%20from%202023-03-12%2012-47-06.png)
+![img](./imagesReadMe/Screenshot%20from%202023-03-12%2012-47-06.png)
 
-![img](../project2/public/Screenshot%20from%202023-03-12%2012-53-32.png)
+![img](./imagesReadMe/Screenshot%20from%202023-03-12%2012-51-00.png)
 
-![img](../project2/public/Screenshot%20from%202023-03-12%2012-51-00.png)
+![img](./imagesReadMe/Screenshot%20from%202023-03-12%2012-53-32.png)
 
 
 ## 02-Project-Requirements
